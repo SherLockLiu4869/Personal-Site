@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 330" role="img" aria-labelledby="title desc">
+  <title id="title">Hand-drawn detective flat cap</title>
+  <desc id="desc">A vintage brown detective cap drawn with irregular ink lines, hatching, and a blue clue pin.</desc>
+  <defs>
+    <filter id="roughen" x="-8%" y="-8%" width="116%" height="116%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.035" numOctaves="2" seed="18" result="noise"/>
+      <feDisplacementMap in="SourceGraphic" in2="noise" scale="2.4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <pattern id="brown-hatch" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(21)">
+      <path d="M 1 0 L 1 14" fill="none" stroke="#1d1b18" stroke-opacity="0.16" stroke-width="3" stroke-linecap="round"/>
+    </pattern>
+    <pattern id="blue-hatch" width="18" height="18" patternUnits="userSpaceOnUse" patternTransform="rotate(88)">
+      <path d="M 3 0 L 3 18" fill="none" stroke="#f7f0e2" stroke-opacity="0.18" stroke-width="4" stroke-linecap="round"/>
+    </pattern>
+  </defs>
+
+  <g fill="none" fill-rule="evenodd">
+    <ellipse cx="260" cy="252" rx="192" ry="29" fill="#191917" opacity="0.16"/>
+
+    <g filter="url(#roughen)" stroke="#191917" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M94 181 C109 93, 183 48, 286 55 C374 61, 439 115, 442 182 C372 200, 218 216, 94 181 Z" fill="#7a5637" stroke-width="9"/>
+      <path d="M105 178 C132 142, 191 124, 272 127 C344 130, 399 148, 436 181 C353 204, 206 214, 105 178 Z" fill="#172a42" stroke-width="8"/>
+      <path d="M101 174 C126 93, 205 65, 293 70 C362 74, 418 115, 431 176 C343 149, 202 151, 101 174 Z" fill="url(#brown-hatch)" stroke-width="0"/>
+
+      <path d="M329 169 C407 162, 470 174, 499 204 C456 241, 373 253, 293 227 C305 200, 319 181, 329 169 Z" fill="#d5b886" stroke-width="8"/>
+      <path d="M335 178 C391 179, 448 189, 483 207" stroke="#191917" stroke-opacity="0.36" stroke-width="4"/>
+      <path d="M324 196 C380 204, 431 215, 466 231" stroke="#191917" stroke-opacity="0.22" stroke-width="4"/>
+
+      <path d="M100 184 C170 205, 284 209, 439 183" stroke="#191917" stroke-width="7"/>
+      <path d="M126 188 C200 201, 285 199, 410 184" stroke="#f7f0e2" stroke-opacity="0.2" stroke-width="4"/>
+
+      <ellipse cx="260" cy="91" rx="24" ry="14" fill="#b9935a" stroke-width="7" transform="rotate(-5 260 91)"/>
+      <path d="M160 102 C184 84, 228 75, 280 77" stroke="#191917" stroke-opacity="0.28" stroke-width="4"/>
+      <path d="M147 126 C202 111, 282 111, 351 127" stroke="#191917" stroke-opacity="0.22" stroke-width="4"/>
+      <path d="M134 150 C208 139, 315 140, 405 157" stroke="#191917" stroke-opacity="0.19" stroke-width="4"/>
+
+      <g class="blue-clue">
+        <circle cx="196" cy="194" r="16" fill="#1f67c7" stroke-width="7"/>
+        <path d="M180 190 C168 184, 156 177, 144 166" stroke="#1f67c7" stroke-width="6"/>
+        <path d="M189 208 C182 224, 171 236, 157 245" stroke="#1f67c7" stroke-width="5"/>
+      </g>
+    </g>
+
+    <g stroke="#191917" stroke-linecap="round" opacity="0.58">
+      <path d="M73 196 C69 185, 73 176, 86 172" stroke-width="4"/>
+      <path d="M452 171 C465 170, 476 176, 481 187" stroke-width="4"/>
+      <path d="M92 220 C144 239, 238 249, 332 238" stroke-width="3" stroke-dasharray="1 14"/>
+      <path d="M384 63 C405 76, 421 92, 434 113" stroke-width="3" stroke-dasharray="1 13"/>
+    </g>
+  </g>
+</svg>
