@@ -2,7 +2,7 @@
 layout: note
 title: "Beyond von Neumann Compute：神经形态 Edge AI 报告简记"
 date: 2026-09-17
-description: "从事件驱动感知、持续学习和神经形态硬件，到 NMLOps、EFLOP 与可验证部署：七场 Edge AI 报告的学术型摘要。"
+description: "从事件驱动感知、持续学习和神经形态硬件，到 NMLOps、EFLOP 与可验证部署。"
 image: /notes/edge-ai-neuromorphic-7-talks/assets/talk-01-adaptive-temporal-perception.png
 tags:
   - Edge AI
