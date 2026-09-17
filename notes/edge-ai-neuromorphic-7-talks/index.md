@@ -16,7 +16,6 @@ math: true
 > 活动：*EDGE AI Neuromorphic Livestreams V2: Beyond von Neumann Compute — Neuromorphic AI at the Edge*<br>
 > 日期：2026 年 9 月 16 日<br>
 > 主办：EDGE AI Foundation / Neuromorphic Working Group<br>
-> 资料性质：根据直播画面与演示幻灯片整理，并辅以公开论文和项目页面核验。
 
 ## 摘要
 
