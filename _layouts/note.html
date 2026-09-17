@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>{{ page.title }} | Sherlock Liu</title>
+    <meta name="description" content="{{ page.description }}">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.description }}">
+    {% if page.image %}<meta property="og:image" content="{{ page.image | absolute_url }}">{% endif %}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="{{ page.title }}">
+    <meta name="twitter:description" content="{{ page.description }}">
+    {% if page.image %}<meta name="twitter:image" content="{{ page.image | absolute_url }}">{% endif %}
+    <link rel="stylesheet" href="{{ '/styles.css' | relative_url }}">
+    {% if page.math %}
+    <script>
+      window.MathJax = {
+        tex: {
+          inlineMath: [["$", "$"], ["\\(", "\\)"]],
+          displayMath: [["$$", "$$"], ["\\[", "\\]"]]
+        },
+        svg: { fontCache: "global" }
+      };
+    </script>
+    <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js"></script>
+    {% endif %}
+  </head>
+  <body class="article-page">
+    <div class="grain" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="{{ '/' | relative_url }}" aria-label="返回首页">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Sherlock Liu</span>
+      </a>
+      <nav class="nav-links" aria-label="主导航">
+        <a href="{{ '/#work' | relative_url }}">作品</a>
+        <a href="{{ '/#notes' | relative_url }}" aria-current="page">想法</a>
+        <a href="{{ '/#contact' | relative_url }}">联系</a>
+      </nav>
+    </header>
+
+    <main class="article-shell">
+      <a class="article-back" href="{{ '/#notes' | relative_url }}">返回笔记与想法</a>
+      <article class="article-note">
+        <header class="article-header">
+          <p class="eyebrow">Note / {{ page.date | date: "%Y.%m.%d" }}</p>
+          <h1>{{ page.title }}</h1>
+          <p class="article-deck">{{ page.description }}</p>
+          {% if page.tags %}
+          <ul class="article-tags" aria-label="文章标签">
+            {% for tag in page.tags %}<li>{{ tag }}</li>{% endfor %}
+          </ul>
+          {% endif %}
+        </header>
+        <div class="article-content">
+          {{ content }}
+        </div>
+      </article>
+    </main>
+  </body>
+</html>
