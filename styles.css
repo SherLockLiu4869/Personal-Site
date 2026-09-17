@@ -192,11 +192,19 @@ h3 {
   font-size: 22px;
 }
 
-.hero-text {
+.hero-profile {
+  display: grid;
+  gap: 4px;
   max-width: 630px;
+  margin-bottom: 0;
   color: #3b3932;
-  font-size: 20px;
-  line-height: 1.7;
+  font-size: 21px;
+  line-height: 1.55;
+}
+
+.hero-profile strong {
+  color: var(--blue);
+  font-size: 24px;
 }
 
 .hero-actions {
@@ -740,8 +748,12 @@ h3 {
     line-height: 1.04;
   }
 
-  .hero-text {
+  .hero-profile {
     font-size: 17px;
+  }
+
+  .hero-profile strong {
+    font-size: 20px;
   }
 
   .portrait-stage {
